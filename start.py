@@ -1,4 +1,4 @@
-from src import User, Console, weather, solvers
+from src import User, Console, weather
 from time import sleep
 from config import TOKEN_VK
 
