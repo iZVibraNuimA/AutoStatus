@@ -8,14 +8,14 @@ def status():
     Конструктор Статуса
     '''
 
-    gorod = 'Ангарск'
+    city = 'YOUR_CITY'
     fl = vk.followers(YOUR_ID)
     bl = vk.get_black_list()
     msg = vk.get_count_msg('unread')['count']
     like = vk.get_like('photo', YOU_ID_PHOTO)
     gift = vk.gifts(YOUR_ID)
     stick = vk.stiker()
-    wth = weather(8, 0, gorod)
+    wth = weather(8, 0, city)
     text = f'пʏпсᴇнь 🐊\n{wth} \n[Followers: 🤓 {fl}]\n[BL: 😵 {bl}]\n[Not Read: ✉ {msg}]\n[Like Ava: ❤ {like}]\n[Gifts: 🎁 {gift}]\n[Sticker: 🎭 {stick}]'
     return text
 
